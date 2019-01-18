@@ -142,8 +142,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 if (OCwindowWidth() <= 800) {
 	open_close("menubar_hdr", "menubar-s");
 }
-repro.track("Web view event");
 </script>
 
+<script>
+	var x = window.pageXOffset;
+	if (x = 200) {
+		repro.track("Web view event");
+	};
+</script>
 </body>
 </html>
